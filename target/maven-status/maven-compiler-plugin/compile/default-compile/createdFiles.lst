@@ -1,0 +1,8 @@
+com/example/model/Task.class
+com/example/SecondaryController.class
+com/example/persistence/JsonConfig.class
+com/example/persistence/TaskRepository$1.class
+com/example/App.class
+module-info.class
+com/example/persistence/TaskRepository.class
+com/example/PrimaryController.class
