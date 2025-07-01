@@ -1,0 +1,15 @@
+[ {
+  "id" : "609333e1-d43d-4957-96d4-111b0e63f49a",
+  "username" : "username",
+  "password" : "EENj3PgOoJ3V06l4VbBMSp/WfzQegJLB+r77CbXF8sZwVtOzokYRYSiwoVF8xW/z",
+  "tasks" : [ {
+    "id" : "a7e8e56c-a637-4576-9c20-ed77deab5d0f",
+    "title" : "Implement secure authentication",
+    "description" : "Add password hashing and verification to the app",
+    "status" : "in-progress",
+    "created_at" : [ 2025, 7, 2, 3, 38, 19, 941296813 ],
+    "due_date" : [ 2025, 7, 9, 3, 38, 19, 941323273 ],
+    "priority" : 1,
+    "tags" : [ "security", "authentication", "important" ]
+  } ]
+} ]

@@ -8,16 +8,16 @@ import java.util.LinkedList;
 public class Task {
   @JsonProperty("id")
   private UUID id;
-  @JsonProperty("titlke")
+  @JsonProperty("title")
   private String title;
   @JsonProperty("description")
   private String description;
-  @JsonProperty("Status")
+  @JsonProperty("status")
   private String status;
   @JsonProperty("created_at")
   private LocalDateTime createdAt;
-  @JsonProperty("due date")
-  private LocalDateTime duedate;
+  @JsonProperty("due_date")
+  private LocalDateTime dueDate;
   @JsonProperty("priority")
   private int priority;
   @JsonProperty("tags")
@@ -26,15 +26,15 @@ public class Task {
   public Task() {
   }
 
-  public Task(UUID id, String title, String description, String status,
-      LocalDateTime createdAt, LocalDateTime duedate, int priority,
+  public Task(String title, String description, String status,
+      LocalDateTime createdAt, LocalDateTime dueDate, int priority,
       LinkedList<String> tags) {
     this.id = UUID.randomUUID();
     this.title = title;
     this.description = description;
     this.status = status;
     this.createdAt = createdAt;
-    this.duedate = duedate;
+    this.dueDate = dueDate;
     this.priority = priority;
     this.tags = tags;
   }
@@ -60,7 +60,7 @@ public class Task {
   }
 
   public LocalDateTime getDueDate() {
-    return duedate;
+    return dueDate;
   }
 
   public int getPriority() {
@@ -87,8 +87,8 @@ public class Task {
     this.createdAt = createdAt;
   }
 
-  public void setDueDate(LocalDateTime duedate) {
-    this.duedate = duedate;
+  public void setDueDate(LocalDateTime dueDate) {
+    this.dueDate = dueDate;
   }
 
   public void setPriority(int priority) {
@@ -107,7 +107,7 @@ public class Task {
         ", description='" + description + '\'' +
         ", status='" + status + '\'' +
         ", createdAt=" + createdAt +
-        ", dueDate=" + duedate +
+        ", dueDate=" + dueDate +
         ", priority=" + priority +
         ", tags=" + tags +
         '}';
